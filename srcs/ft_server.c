@@ -6,7 +6,7 @@
 /*   By: zaiicko <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/13 00:30:46 by zaiicko           #+#    #+#             */
-/*   Updated: 2024/07/16 18:09:14 by zaiicko          ###   ########.fr       */
+/*   Updated: 2024/07/16 20:09:00 by zaiicko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,17 @@ void	handler(int sig)
 int	main(void)
 {
 	reset_byte(&g_byte);
-	ft_printf("THE PID IS : %d\n", getpid());
+	ft_printf("                                                         \n");
+	ft_printf("  "CYAN BOLD" _|_|_| "RESET"                   \n");
+	ft_printf(" "CYAN BOLD"_|          _|_|    _|  _|_|  _|      _|    _|_");
+	ft_printf("|    _| _|_|"RESET"\n");
+	ft_printf(" "CYAN BOLD"  _|_|    _|_|_|_|  _|_|      _|      _|  _|_|_");
+	ft_printf("|_|  _|_|"RESET"\n");
+	ft_printf(" "CYAN BOLD"      _|  _|        _|          _|  _|    _|   ");
+	ft_printf("     _|  "RESET"\n");
+	ft_printf(" "CYAN BOLD"_|_|_|      _|_|_|  _|            _|        _|_");
+	ft_printf("|_|  _|"RESET"  \n");
+	ft_printf(" " CYAN BOLD"\nProcess ID :"RESET" %d\n", getpid());
 	signal(SIGUSR1, handler);
 	signal(SIGUSR2, handler);
 	while (1)

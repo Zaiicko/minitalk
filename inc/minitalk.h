@@ -6,7 +6,7 @@
 /*   By: zaiicko <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 23:17:32 by zaiicko           #+#    #+#             */
-/*   Updated: 2024/07/15 23:45:20 by zaiicko          ###   ########.fr       */
+/*   Updated: 2024/07/16 16:23:56 by zaiicko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,8 @@ typedef struct byte
 	int		i;
 	char	c;
 }		t_byte;
+
+void	reset_byte(t_byte *byte);
+void	handler(int sig);
 
 #endif
